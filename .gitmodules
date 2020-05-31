@@ -1,0 +1,3 @@
+[submodule ".config/yadm/repo.git/.emacs.d"]
+	path = .config/yadm/repo.git/.emacs.d
+	url = /Users/russell/.emacs.d
