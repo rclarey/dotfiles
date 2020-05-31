@@ -3,17 +3,16 @@
 # get submodules
 cd "$HOME"
 
-echo "Init submodules"
-yadm submodule update --recursive --init
-
 # setup brew
 echo "Installing brew packages"
+brew tap railwaycat/emacsmacport
 brew cask install emacs-mac
 brew install ripgrep ffmpeg imagemagick deno vim tldr neofetch htop fzf cloc yadm
 
 # setup emacs
 echo "Installing emacs packages"
-~/.emacs.d/bin/doom sync
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
 
 # install plugs
 echo "Installing vim packages"
