@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# get submodules
+cd "$HOME"
+
+echo "Init submodules"
+yadm submodule update --recursive --init
+
+# setup brew
+echo "Installing brew packages"
+brew cask install emacs-mac
+brew install ripgrep ffmpeg imagemagick deno vim tldr neofetch htop fzf cloc yadm
+
+# setup emacs
+echo "Installing emacs packages"
+~/.emacs.d/bin/doom sync
+
+# install plugs
+echo "Installing vim packages"
+vim '+PlugUpdate' '+PlugClean!' '+PlugUpdate' '+qall'
