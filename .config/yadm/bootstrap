@@ -7,7 +7,7 @@ cd "$HOME"
 echo "Installing brew packages"
 brew tap railwaycat/emacsmacport
 brew cask install emacs-mac
-brew install ripgrep ffmpeg imagemagick deno vim tldr neofetch htop fzf cloc yadm
+brew install fish ripgrep ffmpeg imagemagick deno vim tldr neofetch htop fzf cloc yadm
 
 # setup emacs
 echo "Installing emacs packages"

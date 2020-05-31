@@ -1,6 +1,6 @@
 # PATH
-set PATH /Library/Frameworks/Python.framework/Versions/3.4/bin /usr/local/Cellar/emacs-mac/emacs-26.3-z-mac-7.8/bin/ /usr/local/mysql/bin /Users/russell/.emacs.d/bin /Users/russell/.deno/bin /Users/russell/.cargo/bin $PATH
-set -U fish_user_paths "/usr/local/sbin" $fish_user_paths
+set PATH /usr/local/sbin /Users/russell/.config/nvm/12.16.2/bin /usr/local/bin /Library/Frameworks/Python.framework/Versions/3.4/bin /usr/local/Cellar/emacs-mac/emacs-26.3-z-mac-7.8/bin/ /usr/local/mysql/bin /Users/russell/.emacs.d/bin /Users/russell/.deno/bin /Users/russell/.cargo/bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin /Applications/kitty.app/Contents/MacOS
+set -U fish_user_paths "/usr/local/sbin"
 set -x EDITOR vim
 
 # Enable vim mode
