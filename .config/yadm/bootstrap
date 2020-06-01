@@ -11,8 +11,10 @@ brew install fish ripgrep ffmpeg imagemagick deno vim tldr neofetch htop fzf clo
 
 # setup emacs
 echo "Installing emacs packages"
-git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
-~/.emacs.d/bin/doom install
+if [ ! -d "$HOME/.emacs.d" ]; then
+  git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+  ~/.emacs.d/bin/doom install
+fi
 
 # install plugs
 echo "Installing vim packages"
