@@ -72,6 +72,7 @@
 
 ;; Indenting for everyone
 (setq
+  json-encoding-default-indentation 2
   css-indent-offset 2
   js-indent-level 2
   js2-basic-offset 2
@@ -105,6 +106,10 @@
 
 ;; Get tide working for deno
 (setq tide-tsserver-executable "/Users/russell/.config/nvm/12.16.2/bin/tsserver")
+
+;; Get stuff working for elm
+(add-hook 'elm-mode 'elm-format-on-save-mode)
+
 
 ;; Make getting symbols easier
 (define-key evil-motion-state-map (kbd "C-z") nil)

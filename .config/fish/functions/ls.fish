@@ -1,3 +1,3 @@
 function ls
-    /bin/ls -A -G $argv
+    /bin/ls -G $argv
 end
