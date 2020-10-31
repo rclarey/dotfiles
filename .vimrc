@@ -10,9 +10,12 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
+Plug 'dag/vim-fish'
 call plug#end()
 
 "--- Setting stuff ---
+syntax enable
+filetype plugin indent on
 set nocompatible
 set hlsearch
 set showtabline=2

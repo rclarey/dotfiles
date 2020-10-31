@@ -1,7 +1,7 @@
 # Key bindings: prefix is alt + shift
 
 # Launch terminal
-shift + alt - o : kitty
+shift + cmd - o : open -na /Applications/kitty.app
 
 # Close window
 # shift + alt - w : yabai -m window --close; yabai -m window --focus recent
@@ -96,8 +96,8 @@ cmd + shift - k : yabai -m window --stack north
 cmd + shift - l : yabai -m window --stack east
 
 # Cycle through stack
-cmd + shift - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
-cmd + shift - n : yabai -m window --focus stack.next || yabai -m window --focus stack.first
+cmd + shift - y : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+cmd + shift - i : yabai -m window --focus stack.next || yabai -m window --focus stack.first
 
 # Pop window out of stack
 cmd + shift - u : yabai -m window --toggle float; yabai -m window --toggle float

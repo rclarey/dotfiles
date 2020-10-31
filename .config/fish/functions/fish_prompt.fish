@@ -6,12 +6,12 @@ function fish_prompt --description 'Write out the prompt'
     echo -n $USER
     set_color normal
 
-    echo -n '@'
+    # echo -n '@'
 
     # Host
-    set_color $fish_color_host
-    echo -n (prompt_hostname)
-    set_color normal
+    # set_color $fish_color_host
+    # echo -n (prompt_hostname)
+    # set_color normal
 
     echo -n ':'
 
@@ -20,7 +20,7 @@ function fish_prompt --description 'Write out the prompt'
     echo -n (prompt_pwd)
     set_color normal
 
-    __terlar_git_prompt
+    git_prompt
     fish_hg_prompt
     echo
 
